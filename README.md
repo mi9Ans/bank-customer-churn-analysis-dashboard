@@ -77,7 +77,7 @@ bank-customer-churn-analysis-dashboard/
 ## 🌐 Interactive Dashboard (Tableau Public)
 
 *Add your Tableau Public link once uploaded:*  
-👉 https://public.tableau.com/your_dashboard_link
+👉 [(https://public.tableau.com/app/profile/anshumaan.mishra/viz/BankChurnDashboard_17652200808200/Dashboard1)]
 
 ---
 
