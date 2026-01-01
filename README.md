@@ -1,101 +1,69 @@
-# 📊 Bank Customer Churn Analysis Dashboard (Tableau)
+# Bank Customer Churn Analysis
 
-This project presents a **Tableau dashboard** built to analyze customer churn patterns for a bank using a dataset of **10,000 customers**. The dashboard identifies churn trends across demographics, geography, credit score bands, tenure, account activity, and product usage.
-
----
-
-## 🔍 Dataset Overview
-
-- **Total Customers:** 10,000  
-- **Churned Customers:** 2,037  
-- **Churn Rate:** 20.4%  
-- **Features Included:**  
-  - Age  
-  - Gender  
-  - Geography  
-  - Credit Score  
-  - Account Balance  
-  - Estimated Salary  
-  - Number of Products  
-  - Tenure  
-  - Active/Inactive Status  
-  - Exited (Churn Flag)
-
-Dataset: Public Bank Churn Modeling Dataset.
+## 📌 Project Overview
+This project analyzes customer churn for a retail bank to identify key drivers of customer attrition and highlight high-risk customer segments. The analysis combines **SQL-based data exploration** with an **interactive Tableau dashboard** to deliver actionable business insights.
 
 ---
 
-## 🎯 Objective
-
-To identify and visualize the key factors influencing customer churn, enabling business teams to understand retention challenges and prioritize high-risk segments.  
-The dashboard delivers KPI insights, customer segmentation, and churn driver analysis.
-
----
-
-## 📈 Key Insights
-
-- Customers with **only 1 product** have the **highest churn rate**.  
-- **Inactive customers** churn almost **twice as much** as active ones.  
-- The **35–44 age group** shows the highest churn among all age brackets.  
-- Lower **credit score ranges** (400–499, 500–599) correspond to higher churn.  
-- Geography impacts churn distribution, with some countries showing heavier attrition.  
-- Balance distribution patterns differ significantly between churned and retained customers.  
-- Risk bucket heatmap highlights segments with stronger churn tendencies.
+## 🎯 Business Objectives
+- Understand overall customer churn behavior
+- Identify churn patterns across age, gender, geography, and credit score
+- Analyze the relationship between churn, account balance, tenure, and product usage
+- Segment customers into churn risk buckets to support retention strategies
 
 ---
 
-## 🛠 Tools & Techniques
-
-- **Tableau Desktop**  
-- KPI Layout & Theming  
-- Custom Color Palette  
-- Multi-chart Dashboard Design  
-- Tooltip & Annotation Usage  
-- Segmentation Analysis (Age, Score, Products, Tenure)  
-- Chart Types Used:  
-  - Horizontal & Vertical Bar Charts  
-  - Heatmap  
-  - Bubble Map  
-  - Box Plot  
-  - Histogram  
-  - Lollipop Comparison Bars  
+## 🗂 Dataset
+- Customer-level banking data including:
+  - Demographics (Age, Gender, Geography)
+  - Account information (Balance, Tenure, Number of Products)
+  - Engagement indicators (Active Member, Credit Card Ownership)
+  - Credit Score and Churn Status
 
 ---
 
-## 📂 Repository Structure
-
-```
-bank-customer-churn-analysis-dashboard/
-│
-├── Bank Churn Dashboard.twbx        # Tableau packaged workbook (download & open in Tableau)
-├── dashboard.png                     # Dashboard screenshot
-└── README.md                         # Project documentation
-```
+## 🛠 Tools & Technologies
+- **SQL** – Data querying, aggregation, subqueries, window functions
+- **Tableau** – Interactive dashboard and visual analytics
+- **Excel** – Initial data inspection (if applicable)
 
 ---
 
-## 🌐 Interactive Dashboard (Tableau Public)
+## 📊 Key Analysis Performed (SQL)
+- Churn rate analysis by gender, age group, and geography
+- Identification of high-risk customers using balance, tenure, and product count
+- Use of `GROUP BY`, `CASE WHEN`, subqueries, and window functions
+- Ranking and comparison of customers using `RANK()` and `AVG() OVER()`
 
-*Add your Tableau Public link once uploaded:*  
-👉 [(https://public.tableau.com/app/profile/anshumaan.mishra/viz/BankChurnDashboard_17652200808200/Dashboard1)]
-
----
-
-## 🚀 What I Learned
-
-- Transitioning from Power BI to Tableau and understanding Tableau’s workflow  
-- Designing structured, KPI-driven dashboards  
-- Maintaining consistent visuals using a unified color theme  
-- Extracting churn insights through segmentation  
-- Using annotations to explain outliers (e.g., small sample churn spikes)  
-- Improving dashboard spacing and clarity for executive-style reporting  
+(SQL queries are included in the repository)
 
 ---
 
-## 🔮 Future Enhancements
+## 📈 Dashboard Insights
+- Overall churn rate is ~20%, with higher churn among inactive customers
+- Customers with **1 product** show significantly higher churn
+- Certain age groups (25–44) contribute most to churn volume
+- Lower credit score segments exhibit higher churn rates
+- High-balance but low-engagement customers present retention risk
 
-- Add churn prediction using Python + Tableau  
-- Incorporate cohort analysis  
-- Add more behavioral metrics if available  
-- Introduce dynamic filters for deeper user exploration  
+---
+
+## 📎 Deliverables
+- 📊 Interactive Tableau Dashboard
+- 🧾 SQL Script for Data Analysis
+- 📄 Project Documentation (this README)
+
+---
+
+## 🚀 Key Takeaways
+This project demonstrates how SQL and BI tools can be used together to:
+- Translate raw customer data into business insights
+- Identify churn drivers and high-risk segments
+- Support data-driven decision-making in customer retention
+
+---
+
+## 🔗 Portfolio
+- Tableau Dashboard: https://public.tableau.com/app/profile/anshumaan.mishra/viz/BankChurnDashboard_17652200808200/Dashboard1
+- GitHub Repository: https://github.com/mi9Ans/bank-customer-churn-analysis-dashboard
 
